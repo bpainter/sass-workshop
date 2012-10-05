@@ -1,0 +1,78 @@
+@import "compass/css3";
+
+@mixin happy-radius ($radius) {
+  -o-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+
+@mixin respond-to($media) {
+  @if $media == tiny-screens {
+    @media only screen and (min-width: 320px) { @content; }
+  }
+  @else if $media == medium-screens {
+    @media only screen and (min-width: 600px) { @content; }
+  }
+  @else if $media == large-screens {
+    @media only screen and (min-width: 1024px) { @content; }
+  }
+}
+
+$subbaseline: 6px;
+$baseline:    6px * 3; // 18px
+
+$container-width: 960px;
+$content:         60%;
+$aside:           40%;
+
+//-----------------------------------------------
+// The following html5-boilerplate styles should
+// probably be customized for each site
+//-----------------------------------------------
+body, select, input, textarea {
+  color: $font-color;
+  // Set your base font here, to apply evenly
+  // font-family: Georgia, serif;
+}
+
+//-----------------------------------
+// Add your own custom styles below
+//-----------------------------------
+nav {
+  margin: 20px;
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    display: block; 
+    margin: 0; 
+    padding: 0; 
+    list-style: none;
+    @include respond-to(medium-screens) { 
+      display: inline-block; 
+      margin: 0 3px 5px; 
+    }
+    @include respond-to(large-screens) { 
+      font-size: 18px;
+      margin: 0 3px 10px; 
+    }
+  }
+
+  a {
+    background-color: #ccc;
+    color: #333;
+    display: block;
+    padding: 5px 15px;
+    text-decoration: none;
+    &:hover {
+      background-color: #333;
+      color: #efefef;  
+    }
+  }
+}
+

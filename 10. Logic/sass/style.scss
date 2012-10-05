@@ -1,0 +1,27 @@
+@import 'compass';
+
+// Here's where we define some default constants
+@import "partials/base";
+
+// Or, you can import the "overrides" partial if
+// you want more control over individual mixins
+//@import "partials/overrides";
+
+// Finally, put your own styles in these partials
+// and add more as needed (i.e. forms, tables, nav)
+@import "partials/fonts";
+@import "partials/page";
+
+
+// Media queries should come last
+@media only screen and (min-width: 600px) {
+ @import "partials/screen-medium";
+}
+
+@media only screen and (min-width: 1024px) {
+ @import "partials/screen-large";
+}
+
+@media only screen and (min-width: 2024px) {
+ @import "partials/screen-freakin-huge";
+}

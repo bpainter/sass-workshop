@@ -1,0 +1,47 @@
+/* line 6, ../sass/partials/_fonts.scss */
+body {
+  color: #222222;
+  font-family: sans-serif;
+  font-size: 13px;
+  line-height: 1.231;
+}
+
+/* line 7, ../sass/partials/_page.scss */
+body, select, input, textarea {
+  color: #222222;
+}
+
+/* line 17, ../sass/partials/_page.scss */
+nav {
+  margin: 20px;
+}
+/* line 20, ../sass/partials/_page.scss */
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+/* line 23, ../sass/partials/_page.scss */
+nav ul li {
+  display: inline-block;
+  margin: 0 3px;
+}
+/* line 26, ../sass/partials/_page.scss */
+nav ul li a {
+  background-color: #ccc;
+  color: #333;
+  display: block;
+  padding: 5px 15px;
+  text-decoration: none;
+}
+/* line 33, ../sass/partials/_page.scss */
+nav ul li a:hover {
+  background-color: #333;
+  color: #efefef;
+}
+
+@media only screen and (min-width: 480px) {
+  /* Style adjustments for viewports 480px and over go here */
+}
+@media only screen and (min-width: 768px) {
+  /* Style adjustments for viewports 768px and over go here */
+}

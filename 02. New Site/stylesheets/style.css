@@ -1,0 +1,62 @@
+/*
+Syntax error: File to import not found or unreadable: compass/css3.
+              Load paths:
+                /Users/bermonpainter/Dropbox/Presentations/Modular Sass Workshop/02. New Site
+                /Users/bermonpainter/Dropbox/Presentations/Modular Sass Workshop/02. New Site/sass
+        on line 1 of sass/partials/_page.scss
+        from line 12 of sass/style.scss
+
+1: 
+2: // Here's where we define some default constants
+3: @import "partials/base";
+4: 
+5: // Or, you can import the "overrides" partial if
+6: // you want more control over individual mixins
+
+Backtrace:
+sass/partials/_page.scss:1
+sass/style.scss:12
+/Users/bermonpainter/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.3/lib/sass/tree/import_node.rb:64:in `rescue in import'
+/Users/bermonpainter/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.3/lib/sass/tree/import_node.rb:42:in `import'
+/Users/bermonpainter/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.3/lib/sass/tree/import_node.rb:25:in `imported_file'
+/Users/bermonpainter/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.3/lib/sass/tree/visitors/perform.rb:227:in `rescue in visit_import'
+/Users/bermonpainter/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.3/lib/sass/tree/visitors/perform.rb:232:in `visit_import'
+/Users/bermonpainter/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.3/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/bermonpainter/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.3/lib/sass/tree/visitors/perform.rb:98:in `visit'
+/Users/bermonpainter/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.3/lib/sass/tree/visitors/perform.rb:224:in `block in visit_import'
+/Users/bermonpainter/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.3/lib/sass/tree/visitors/perform.rb:224:in `map'
+/Users/bermonpainter/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.3/lib/sass/tree/visitors/perform.rb:224:in `visit_import'
+/Users/bermonpainter/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.3/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/bermonpainter/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.3/lib/sass/tree/visitors/perform.rb:98:in `visit'
+/Users/bermonpainter/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.3/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/bermonpainter/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.3/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/bermonpainter/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.3/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/bermonpainter/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.3/lib/sass/tree/visitors/perform.rb:107:in `block in visit_children'
+/Users/bermonpainter/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.3/lib/sass/tree/visitors/perform.rb:119:in `with_environment'
+/Users/bermonpainter/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.3/lib/sass/tree/visitors/perform.rb:106:in `visit_children'
+/Users/bermonpainter/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.3/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/bermonpainter/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.3/lib/sass/tree/visitors/perform.rb:126:in `visit_root'
+/Users/bermonpainter/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.3/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/bermonpainter/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.3/lib/sass/tree/visitors/perform.rb:98:in `visit'
+/Users/bermonpainter/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.3/lib/sass/tree/visitors/perform.rb:7:in `visit'
+/Users/bermonpainter/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.3/lib/sass/tree/root_node.rb:20:in `render'
+/Users/bermonpainter/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.3/lib/sass/engine.rb:315:in `_render'
+/Users/bermonpainter/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.3/lib/sass/engine.rb:262:in `render'
+/Users/bermonpainter/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.3/lib/sass/plugin/compiler.rb:340:in `update_stylesheet'
+/Users/bermonpainter/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.3/lib/sass/plugin/compiler.rb:202:in `block in update_stylesheets'
+/Users/bermonpainter/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.3/lib/sass/plugin/compiler.rb:200:in `each'
+/Users/bermonpainter/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.3/lib/sass/plugin/compiler.rb:200:in `update_stylesheets'
+/Users/bermonpainter/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.3/lib/sass/plugin/compiler.rb:234:in `watch'
+/Users/bermonpainter/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.3/lib/sass/plugin.rb:107:in `method_missing'
+/Users/bermonpainter/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.3/lib/sass/exec.rb:431:in `watch_or_update'
+/Users/bermonpainter/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.3/lib/sass/exec.rb:302:in `process_result'
+/Users/bermonpainter/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.3/lib/sass/exec.rb:41:in `parse'
+/Users/bermonpainter/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.3/lib/sass/exec.rb:21:in `parse!'
+/Users/bermonpainter/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.3/bin/sass:8:in `<top (required)>'
+/Users/bermonpainter/.rbenv/versions/1.9.3-p194/bin/sass:23:in `load'
+/Users/bermonpainter/.rbenv/versions/1.9.3-p194/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: File to import not found or unreadable: compass/css3.\A               Load paths:\A                 /Users/bermonpainter/Dropbox/Presentations/Modular Sass Workshop/02. New Site\A                 /Users/bermonpainter/Dropbox/Presentations/Modular Sass Workshop/02. New Site/sass\A         on line 1 of sass/partials/_page.scss\A         from line 12 of sass/style.scss\A \A 1: \A 2: // Here's where we define some default constants\A 3: @import \"partials/base\";\A 4: \A 5: // Or, you can import the \"overrides\" partial if\A 6: // you want more control over individual mixins"; }

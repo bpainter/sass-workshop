@@ -1,0 +1,56 @@
+/* line 6, ../sass/partials/_fonts.scss */
+body {
+  color: #222222;
+  font-family: sans-serif;
+  font-size: 13px;
+  line-height: 1.231;
+}
+
+/* line 35, ../sass/partials/_page.scss */
+body, select, input, textarea {
+  color: #222222;
+}
+
+/* line 44, ../sass/partials/_page.scss */
+nav {
+  margin: 20px;
+}
+/* line 46, ../sass/partials/_page.scss */
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+/* line 51, ../sass/partials/_page.scss */
+nav li {
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+@media only screen and (min-width: 600px) {
+  /* line 51, ../sass/partials/_page.scss */
+  nav li {
+    display: inline-block;
+    margin: 0 3px 5px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  /* line 51, ../sass/partials/_page.scss */
+  nav li {
+    font-size: 18px;
+    margin: 0 3px 10px;
+  }
+}
+/* line 66, ../sass/partials/_page.scss */
+nav a {
+  background-color: #ccc;
+  color: #333;
+  display: block;
+  padding: 5px 15px;
+  text-decoration: none;
+}
+/* line 72, ../sass/partials/_page.scss */
+nav a:hover {
+  background-color: #333;
+  color: #efefef;
+}
