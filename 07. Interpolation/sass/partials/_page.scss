@@ -13,24 +13,8 @@ body, select, input, textarea {
 //-----------------------------------
 // Add your own custom styles below
 //-----------------------------------
-// Responsive Web Design Formula
-// target ÷ container = ratio
-// ratio * 100 = percent
+$icon-name: printer;
 
-#container {
-  margin: 0 auto;
-  width: 960px;
-}
-article, aside {
-  min-height: 200px;
-}
-article {
-  background-color: #ccc;
-  float: left;
-  width: 620px;
-}
-aside {
-  background-color: #666;
-  float: right;
-  width: 320px;
+.icon-#{$icon-name} {
+  background-image: image-url("icons/icon-#{$icon-name}.png");
 }

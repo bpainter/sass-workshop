@@ -13,13 +13,91 @@ body, select, input, textarea {
 //-----------------------------------
 // Add your own custom styles below
 //-----------------------------------
+$grid-columns: 12;
+$grid-width: 960px;
 
-body {}
+@function column-width($cols) {
+  @return (($grid-width / $grid-columns) * $cols / $grid-width) * 100;
+}
 
-#container {}
+// Responsive Web Design Formula
+// target ÷ container = ratio
+// ratio * 100 = percent
 
-header {}
+#container {
+  margin: 0 auto;
+  width: 960px;
+}
+article, aside {
+  min-height: 200px;
+}
+article {
+  background-color: #ccc;
+  float: left;
+  width: 620px;
+}
+aside {
+  background-color: #666;
+  float: right;
+  width: 320px;
+}
 
-#main {}
 
-footer {}
+// Media Queries
+// Variables in Media Queries - yes
+// Variables as breakpoints - No in 3.1, Yes in 3.2
+// @extend inside a media query - yes/no
+// @mixins inside a media query - yes
+
+$small: 480px;
+$medium: 768px;
+$large: 1024px;
+
+%message {
+  padding: 10px;
+  margin: 10px;
+}
+.error {
+  @extend %message;
+  color: red;
+}
+.warning {
+  @extend %message;
+  color: yellow;
+}
+
+@media only screen and (min-width: $small) {
+  .success {
+    @extend %message; // Doesn't work when what you're extending is outside of a media query
+    color: green;
+  }
+}
+
+@media only screen and (min-width: $medium) {
+
+}
+
+
+
+
+
+
+// Media Query Mixin using @content
+
+@mixin respond-to($media) {
+  @if $media == handhelds {
+    @media only screen and (max-width: $small) { @content; }
+  }
+  @else if $media == medium-screens {
+    @media only screen and (min-width: $small + 1) and (max-width: $large - 1) { @content; }
+  }
+  @else if $media == wide-screens {
+    @media only screen and (min-width: $large) { @content; }
+  }
+}
+
+article {
+  @include respond-to(wide-screens) {
+    width: 500px;
+  }
+}

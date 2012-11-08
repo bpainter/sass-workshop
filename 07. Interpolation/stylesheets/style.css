@@ -11,29 +11,9 @@ body, select, input, textarea {
   color: #222222;
 }
 
-/* line 32, ../sass/partials/_page.scss */
-#container {
-  margin: 0 auto;
-  width: 960px;
-}
-
-/* line 36, ../sass/partials/_page.scss */
-article, aside {
-  min-height: 200px;
-}
-
-/* line 39, ../sass/partials/_page.scss */
-article {
-  background-color: #ccc;
-  float: left;
-  width: 620px;
-}
-
-/* line 44, ../sass/partials/_page.scss */
-aside {
-  background-color: #666;
-  float: right;
-  width: 320px;
+/* line 18, ../sass/partials/_page.scss */
+.icon-printer {
+  background-image: url('/images/icons/icon-printer.png');
 }
 
 @media only screen and (min-width: 480px) {

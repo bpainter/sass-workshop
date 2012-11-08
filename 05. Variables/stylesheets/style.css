@@ -6,16 +6,16 @@ body {
   line-height: 1.231;
 }
 
-/* line 32, ../sass/partials/_page.scss */
+/* line 30, ../sass/partials/_page.scss */
 body, select, input, textarea {
   color: #49312a;
 }
 
-/* line 41, ../sass/partials/_page.scss */
+/* line 39, ../sass/partials/_page.scss */
 .tiles {
   margin-top: 20px;
 }
-/* line 43, ../sass/partials/_page.scss */
+/* line 41, ../sass/partials/_page.scss */
 .tiles div {
   background-color: #ccc;
   border-radius: 50px;
@@ -24,29 +24,25 @@ body, select, input, textarea {
   margin: 0 5px;
   width: 50px;
 }
-/* line 51, ../sass/partials/_page.scss */
+/* line 49, ../sass/partials/_page.scss */
 .tiles .tile-1 {
   background-color: #ff8566;
 }
-/* line 54, ../sass/partials/_page.scss */
+/* line 52, ../sass/partials/_page.scss */
 .tiles .tile-2 {
   background-color: #8a9aa2;
 }
-/* line 57, ../sass/partials/_page.scss */
+/* line 55, ../sass/partials/_page.scss */
 .tiles .tile-3 {
   background-color: #94a57f;
 }
-/* line 60, ../sass/partials/_page.scss */
+/* line 58, ../sass/partials/_page.scss */
 .tiles .tile-4 {
   background-color: #49312a;
 }
-/* line 63, ../sass/partials/_page.scss */
+/* line 61, ../sass/partials/_page.scss */
 .tiles .tile-5 {
   background-color: #fefbee;
-}
-/* line 66, ../sass/partials/_page.scss */
-.tiles .abomination {
-  background-color: #ff732a;
 }
 
 @media only screen and (min-width: 480px) {

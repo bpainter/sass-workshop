@@ -29,8 +29,14 @@ body, select, input, textarea {
 //-----------------------------------
 // Add your own custom styles below
 //-----------------------------------
-// layout calculations
-// color arithmetic
+// @if $variable ==  {
+// } @else if $variable ==  {
+// } @else {
+// }
+// @include background(linear-gradient());
+@mixin button($color, $shadow, $radius) {
+
+}
 
 button, .button {
   border-radius: 4px;

@@ -29,7 +29,8 @@ body, select, input, textarea {
 //-----------------------------------
 // Add your own custom styles below
 //-----------------------------------
-%button {
+.button {
+  background-color: #ccc;
   border-radius: 4px;
   box-shadow: #444 0 1px 0;
   cursor: pointer;
@@ -38,6 +39,7 @@ body, select, input, textarea {
   margin: 0 5px 0 0;
   padding: 5px 10px;
   position: relative;
+  text-decoration: none;
   &:hover {
     background-color: #666;
     color: #efefef;
@@ -48,22 +50,5 @@ body, select, input, textarea {
   }
 }
 
-button {
-  @extend %button;
-}
-a {
-  text-decoration: none;
-}
-.button-primary {
-  @extend %button;
-  background-color: $color-brand-primary;
-  border: 1px solid $color-brand-primary;
-  color: #fff;
-}
-.button-secondary {
-  @extend %button;
-  background-color: $color-brand-secondary;
-  border: 1px solid $color-brand-secondary;
-  color: #fff;
-}
+
 

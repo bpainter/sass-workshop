@@ -12,6 +12,11 @@
 @import "partials/fonts";
 @import "partials/page";
 
+// Icons
+$icon-layout: smart;
+@import "icons/*.png";
+@include all-icons-sprites;
 
 // Media should come last
 @import "partials/media";
+

@@ -13,13 +13,36 @@ body, select, input, textarea {
 //-----------------------------------
 // Add your own custom styles below
 //-----------------------------------
+// @return ($grid-width - $grid-gutter * ($grid-columns - 1)) / $grid-columns * $cols + $grid-gutter * ($cols - 1);
+// $grid-gutter: 10px;
 
-body {}
 
-#container {}
 
-header {}
+$grid-columns: 12;
+$grid-width: 960px;
 
-#main {}
+@function column-width($cols) {
+  @return (($grid-width / $grid-columns) * $cols / $grid-width) * 100;
+}
 
-footer {}
+// Responsive Web Design Formula
+// target ÷ container = ratio
+// ratio * 100 = percent
+
+#container {
+  margin: 0 auto;
+  width: 960px;
+}
+article, aside {
+  min-height: 200px;
+}
+article {
+  background-color: #ccc;
+  float: left;
+  width: 620px;
+}
+aside {
+  background-color: #666;
+  float: right;
+  width: 320px;
+}

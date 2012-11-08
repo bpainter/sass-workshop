@@ -12,7 +12,8 @@ body, select, input, textarea {
 }
 
 /* line 32, ../sass/partials/_page.scss */
-.button-primary, .button-secondary, .button-disabled, .button-cancel {
+.button {
+  background-color: #ccc;
   border-radius: 4px;
   box-shadow: #444 0 1px 0;
   cursor: pointer;
@@ -21,35 +22,17 @@ body, select, input, textarea {
   margin: 0 5px 0 0;
   padding: 5px 10px;
   position: relative;
+  text-decoration: none;
 }
-/* line 41, ../sass/partials/_page.scss */
-.button-primary:hover, .button-secondary:hover, .button-disabled:hover, .button-cancel:hover {
+/* line 43, ../sass/partials/_page.scss */
+.button:hover {
   background-color: #666;
   color: #efefef;
 }
-/* line 45, ../sass/partials/_page.scss */
-.button-primary:active, .button-secondary:active, .button-disabled:active, .button-cancel:active {
+/* line 47, ../sass/partials/_page.scss */
+.button:active {
   bottom: -1px;
   box-shadow: none;
-}
-
-/* line 51, ../sass/partials/_page.scss */
-a {
-  text-decoration: none;
-}
-
-/* line 54, ../sass/partials/_page.scss */
-.button-primary {
-  background-color: #94a57f;
-  border: 1px solid #94a57f;
-  color: #fff;
-}
-
-/* line 60, ../sass/partials/_page.scss */
-.button-secondary {
-  background-color: #8a9aa2;
-  border: 1px solid #8a9aa2;
-  color: #fff;
 }
 
 @media only screen and (min-width: 480px) {

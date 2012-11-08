@@ -11,9 +11,56 @@ body, select, input, textarea {
   color: #222222;
 }
 
-@media only screen and (min-width: 480px) {
-  /* Style adjustments for viewports 480px and over go here */
+/* line 27, ../sass/partials/_page.scss */
+#container {
+  margin: 0 auto;
+  width: 960px;
 }
-@media only screen and (min-width: 768px) {
-  /* Style adjustments for viewports 768px and over go here */
+
+/* line 31, ../sass/partials/_page.scss */
+article, aside {
+  min-height: 200px;
+}
+
+/* line 34, ../sass/partials/_page.scss */
+article {
+  background-color: #ccc;
+  float: left;
+  width: 620px;
+}
+
+/* line 39, ../sass/partials/_page.scss */
+aside {
+  background-color: #666;
+  float: right;
+  width: 320px;
+}
+
+/* line 56, ../sass/partials/_page.scss */
+.error, .warning {
+  padding: 10px;
+  margin: 10px;
+}
+
+/* line 60, ../sass/partials/_page.scss */
+.error {
+  color: red;
+}
+
+/* line 64, ../sass/partials/_page.scss */
+.warning {
+  color: yellow;
+}
+
+@media only screen and (min-width: 480px) {
+  /* line 70, ../sass/partials/_page.scss */
+  .success {
+    color: green;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  /* line 99, ../sass/partials/_page.scss */
+  article {
+    width: 500px;
+  }
 }

@@ -16,8 +16,6 @@ $color-text:            $black;
 $color-link:            $color-brand-secondary;
 $color-link-hover:      $color-brand-accent;
 
-$abomination:            $red + $black;
-
 $baseline:              16px;
 
 $font-size-base:        14px;
@@ -62,8 +60,5 @@ body, select, input, textarea {
   }
   .tile-5 {
     background-color: $color-background;
-  }
-  .abomination {
-    background-color: darken(saturate($abomination, 20%), 20%);
   }
 }
