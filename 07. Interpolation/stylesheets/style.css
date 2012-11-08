@@ -12,8 +12,8 @@ body, select, input, textarea {
 }
 
 /* line 18, ../sass/partials/_page.scss */
-.icon-printer {
-  background-image: url('/images/icons/icon-printer.png');
+.icon-usa {
+  background-image: url('/images/icons/icon-usa.png');
 }
 
 @media only screen and (min-width: 480px) {

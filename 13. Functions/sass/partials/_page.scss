@@ -22,7 +22,7 @@ $grid-columns: 12;
 $grid-width: 960px;
 
 @function column-width($cols) {
-  @return (($grid-width / $grid-columns) * $cols / $grid-width) * 100;
+  @return (($grid-width / $grid-columns) * $cols / $grid-width) * 100%;
 }
 
 // Responsive Web Design Formula
@@ -31,7 +31,7 @@ $grid-width: 960px;
 
 #container {
   margin: 0 auto;
-  width: 960px;
+  width: 100%;
 }
 article, aside {
   min-height: 200px;
@@ -39,10 +39,10 @@ article, aside {
 article {
   background-color: #ccc;
   float: left;
-  width: 620px;
+  width: column-width(6);
 }
 aside {
   background-color: #666;
   float: right;
-  width: 320px;
+  width: column-width(6);
 }

@@ -17,9 +17,11 @@ body, select, input, textarea {
 // target ÷ container = ratio
 // ratio * 100 = percent
 
+$container: 960px;
+
 #container {
   margin: 0 auto;
-  width: 960px;
+  width: $container;
 }
 article, aside {
   min-height: 200px;
@@ -27,10 +29,10 @@ article, aside {
 article {
   background-color: #ccc;
   float: left;
-  width: 620px;
+  width: (620px / $container) * 100%;
 }
 aside {
   background-color: #666;
   float: right;
-  width: 320px;
+  width: (320px / $container) * 100%;
 }

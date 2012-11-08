@@ -1,31 +1,4 @@
 @import "compass/css3";
-
-$red:   #ff8566;
-$blue:  #8a9aa2;
-$green: #94a57f;
-$black: #49312a;
-$grey:  #a9a095;
-$tan:   #fefbee;
-
-$color-brand-primary:   $green;
-$color-brand-secondary: $blue;
-$color-brand-accent:    $red;
-
-$color-background:      $tan;
-$color-text:            $black;
-$color-link:            $color-brand-secondary;
-$color-link-hover:      $color-brand-accent;
-
-//-----------------------------------------------
-// The following html5-boilerplate styles should
-// probably be customized for each site
-//-----------------------------------------------
-body, select, input, textarea {
-  color: $font-color;
-  // Set your base font here, to apply evenly
-  // font-family: Georgia, serif;
-}
-
 //-----------------------------------
 // Add your own custom styles below
 //-----------------------------------
@@ -41,26 +14,72 @@ body, select, input, textarea {
 // invert($color)
 
 
-.button {
-  background-color: #ccc;
-  border-radius: 4px;
-  box-shadow: #444 0 1px 0;
-  cursor: pointer;
-  display: inline-block;
-  font-size: 14px;
-  margin: 0 5px 0 0;
-  padding: 5px 10px;
-  position: relative;
-  text-decoration: none;
-  &:hover {
-    background-color: #666;
-    color: #efefef;
-  }
-  &:active {
-    bottom: -1px;
-    box-shadow: none;
-  }
+$red:   #ff8566;
+$blue:  #8a9aa2;
+$green: #94a57f;
+$black: #49312a;
+$grey:  #a9a095;
+$tan:   #fefbee;
+
+$color-brand-primary:   $red;
+$color-brand-secondary: $blue;
+$color-brand-accent:    $green;
+
+$color-background:      $tan;
+$color-text:            $black;
+$color-link:            $color-brand-secondary;
+$color-link-hover:      $color-brand-accent;
+
+$baseline:              16px;
+
+$font-size-base:        14px;
+$font-stack-sans:       "Helvetica, Sans";
+$font-stack-serif:      "Georgia, Times";
+$font-stack-monospace:  "Courier";
+
+$experimental-support-for-svg: true;
+//-----------------------------------------------
+// The following html5-boilerplate styles should
+// probably be customized for each site
+//-----------------------------------------------
+body, select, input, textarea {
+  color: $color-text;
+  // Set your base font here, to apply evenly
+  font-family: $font-stack-serif;
 }
 
-
-
+//-----------------------------------
+// Add your own cuwstom styles below
+//-----------------------------------
+.tiles {
+  margin-top: 20px;
+  div {
+    background-color: #ccc;
+    border-radius: 50px;
+    display: inline-block;
+    height: 50px;
+    margin: 0 5px;
+    width: 50px;
+  }
+  .tile-1 {
+    background-color: $color-brand-primary;
+    @include background(linear-gradient(lighten($color-brand-primary, 15%) darken($color-brand-primary, 15%)));
+    border: 1px solid darken($color-brand-primary, 15%);
+    @include box-shadow(darken($color-brand-primary, 30%) 0 3px 5px);
+  }
+  .tile-2 {
+    background-color: $color-brand-secondary;
+  }
+  .tile-3 {
+    background-color: $color-brand-accent;
+  }
+  .tile-4 {
+    background-color: $color-text;
+  }
+  .tile-5 {
+    background-color: $color-background;
+  }
+  .abomination{
+    background-color: $color-brand-primary / pink;
+  }
+}

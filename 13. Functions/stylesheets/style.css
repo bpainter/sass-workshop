@@ -14,7 +14,7 @@ body, select, input, textarea {
 /* line 32, ../sass/partials/_page.scss */
 #container {
   margin: 0 auto;
-  width: 960px;
+  width: 100%;
 }
 
 /* line 36, ../sass/partials/_page.scss */
@@ -26,14 +26,14 @@ article, aside {
 article {
   background-color: #ccc;
   float: left;
-  width: 620px;
+  width: 50%;
 }
 
 /* line 44, ../sass/partials/_page.scss */
 aside {
   background-color: #666;
   float: right;
-  width: 320px;
+  width: 50%;
 }
 
 @media only screen and (min-width: 480px) {

@@ -14,7 +14,7 @@ body, select, input, textarea {
 /* line 27, ../sass/partials/_page.scss */
 #container {
   margin: 0 auto;
-  width: 960px;
+  width: 100%;
 }
 
 /* line 31, ../sass/partials/_page.scss */
@@ -26,14 +26,14 @@ article, aside {
 article {
   background-color: #ccc;
   float: left;
-  width: 620px;
+  width: 66.66667%;
 }
 
 /* line 39, ../sass/partials/_page.scss */
 aside {
   background-color: #666;
   float: right;
-  width: 320px;
+  width: 25%;
 }
 
 /* line 56, ../sass/partials/_page.scss */
@@ -52,14 +52,31 @@ aside {
   color: yellow;
 }
 
-@media only screen and (min-width: 480px) {
+@media only screen and (max-width: 480px) {
   /* line 70, ../sass/partials/_page.scss */
+  article {
+    background-color: red;
+    width: 100%;
+  }
+
+  /* line 74, ../sass/partials/_page.scss */
+  aside {
+    width: 100%;
+  }
+
+  /* line 77, ../sass/partials/_page.scss */
   .success {
     color: green;
   }
 }
+@media only screen and (min-width: 768px) {
+  /* line 84, ../sass/partials/_page.scss */
+  article {
+    background-color: blue;
+  }
+}
 @media only screen and (min-width: 1024px) {
-  /* line 99, ../sass/partials/_page.scss */
+  /* line 108, ../sass/partials/_page.scss */
   article {
     width: 500px;
   }

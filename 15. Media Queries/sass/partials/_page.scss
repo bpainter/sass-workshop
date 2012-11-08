@@ -17,7 +17,7 @@ $grid-columns: 12;
 $grid-width: 960px;
 
 @function column-width($cols) {
-  @return (($grid-width / $grid-columns) * $cols / $grid-width) * 100;
+  @return (($grid-width / $grid-columns) * $cols / $grid-width) * 100%;
 }
 
 // Responsive Web Design Formula
@@ -26,7 +26,7 @@ $grid-width: 960px;
 
 #container {
   margin: 0 auto;
-  width: 960px;
+  width: 100%;
 }
 article, aside {
   min-height: 200px;
@@ -34,12 +34,12 @@ article, aside {
 article {
   background-color: #ccc;
   float: left;
-  width: 620px;
+  width: column-width(8);
 }
 aside {
   background-color: #666;
   float: right;
-  width: 320px;
+  width: column-width(3);
 }
 
 
@@ -66,7 +66,14 @@ $large: 1024px;
   color: yellow;
 }
 
-@media only screen and (min-width: $small) {
+@media only screen and (max-width: $small) {
+  article{
+    background-color: red;
+    width: column-width(12);
+  }
+  aside {
+    width: column-width(12);
+  }
   .success {
     @extend %message; // Doesn't work when what you're extending is outside of a media query
     color: green;
@@ -74,7 +81,9 @@ $large: 1024px;
 }
 
 @media only screen and (min-width: $medium) {
-
+  article {
+    background-color: blue;
+  }
 }
 
 

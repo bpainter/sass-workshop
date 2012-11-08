@@ -11,29 +11,29 @@ body, select, input, textarea {
   color: #222222;
 }
 
-/* line 20, ../sass/partials/_page.scss */
+/* line 22, ../sass/partials/_page.scss */
 #container {
   margin: 0 auto;
   width: 960px;
 }
 
-/* line 24, ../sass/partials/_page.scss */
+/* line 26, ../sass/partials/_page.scss */
 article, aside {
   min-height: 200px;
 }
 
-/* line 27, ../sass/partials/_page.scss */
+/* line 29, ../sass/partials/_page.scss */
 article {
   background-color: #ccc;
   float: left;
-  width: 620px;
+  width: 64.58333%;
 }
 
-/* line 32, ../sass/partials/_page.scss */
+/* line 34, ../sass/partials/_page.scss */
 aside {
   background-color: #666;
   float: right;
-  width: 320px;
+  width: 33.33333%;
 }
 
 @media only screen and (min-width: 480px) {

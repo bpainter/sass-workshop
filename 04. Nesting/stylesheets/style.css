@@ -20,23 +20,27 @@ nav ul {
   margin: 0;
   padding: 0;
 }
-/* line 23, ../sass/partials/_page.scss */
-nav ul li {
+/* line 24, ../sass/partials/_page.scss */
+nav li {
   display: inline-block;
   margin: 0 3px;
 }
-/* line 26, ../sass/partials/_page.scss */
-nav ul li a {
+/* line 28, ../sass/partials/_page.scss */
+nav a {
   background-color: #ccc;
   color: #333;
   display: block;
   padding: 5px 15px;
   text-decoration: none;
 }
-/* line 33, ../sass/partials/_page.scss */
-nav ul li a:hover {
+/* line 34, ../sass/partials/_page.scss */
+nav a:hover {
   background-color: #333;
   color: #efefef;
+}
+/* line 39, ../sass/partials/_page.scss */
+.ie6 nav {
+  margin: 10px;
 }
 
 @media only screen and (min-width: 480px) {

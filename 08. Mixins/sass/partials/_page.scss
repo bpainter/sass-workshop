@@ -29,10 +29,12 @@ body, select, input, textarea {
 //-----------------------------------
 // Add your own custom styles below
 //-----------------------------------
-.button {
-  background-color: #ccc;
+
+@mixin button($color) {
+  background-color: $color;
   border-radius: 4px;
-  box-shadow: #444 0 1px 0;
+  box-shadow: darken($color, 5%) 0 1px 0;
+  color: #fff;
   cursor: pointer;
   display: inline-block;
   font-size: 14px;
@@ -41,14 +43,24 @@ body, select, input, textarea {
   position: relative;
   text-decoration: none;
   &:hover {
-    background-color: #666;
-    color: #efefef;
+    background-color: lighten($color, 5%);
   }
   &:active {
     bottom: -1px;
     box-shadow: none;
   }
 }
+
+.button-primary {
+  @include button($color-brand-primary);
+}
+.button-secondary {
+  @include button($color-brand-secondary);
+}
+.button-disabled {
+  @include button(#ccc);
+}
+
 
 
 

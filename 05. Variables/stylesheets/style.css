@@ -9,6 +9,7 @@ body {
 /* line 30, ../sass/partials/_page.scss */
 body, select, input, textarea {
   color: #49312a;
+  font-family: "Georgia, Times";
 }
 
 /* line 39, ../sass/partials/_page.scss */

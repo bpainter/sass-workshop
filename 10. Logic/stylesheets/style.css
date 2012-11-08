@@ -13,6 +13,6 @@ body, select, input, textarea {
 
 /* line 18, ../sass/partials/_page.scss */
 .icon {
-  height: 100px;
-  width: 100px;
+  height: 50px;
+  width: 50px;
 }

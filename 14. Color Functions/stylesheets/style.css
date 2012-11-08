@@ -6,33 +6,58 @@ body {
   line-height: 1.231;
 }
 
-/* line 23, ../sass/partials/_page.scss */
+/* line 45, ../sass/partials/_page.scss */
 body, select, input, textarea {
-  color: #222222;
+  color: #49312a;
+  font-family: "Georgia, Times";
 }
 
-/* line 44, ../sass/partials/_page.scss */
-.button {
+/* line 54, ../sass/partials/_page.scss */
+.tiles {
+  margin-top: 20px;
+}
+/* line 56, ../sass/partials/_page.scss */
+.tiles div {
   background-color: #ccc;
-  border-radius: 4px;
-  box-shadow: #444 0 1px 0;
-  cursor: pointer;
+  border-radius: 50px;
   display: inline-block;
-  font-size: 14px;
-  margin: 0 5px 0 0;
-  padding: 5px 10px;
-  position: relative;
-  text-decoration: none;
+  height: 50px;
+  margin: 0 5px;
+  width: 50px;
 }
-/* line 55, ../sass/partials/_page.scss */
-.button:hover {
-  background-color: #666;
-  color: #efefef;
+/* line 64, ../sass/partials/_page.scss */
+.tiles .tile-1 {
+  background-color: #ff8566;
+  background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmYzJiMyIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2ZmNDgxYSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffc2b3), color-stop(100%, #ff481a));
+  background: -webkit-linear-gradient(#ffc2b3, #ff481a);
+  background: -moz-linear-gradient(#ffc2b3, #ff481a);
+  background: -o-linear-gradient(#ffc2b3, #ff481a);
+  background: linear-gradient(#ffc2b3, #ff481a);
+  border: 1px solid #ff481a;
+  -webkit-box-shadow: #cc2900 0 3px 5px;
+  -moz-box-shadow: #cc2900 0 3px 5px;
+  box-shadow: #cc2900 0 3px 5px;
 }
-/* line 59, ../sass/partials/_page.scss */
-.button:active {
-  bottom: -1px;
-  box-shadow: none;
+/* line 70, ../sass/partials/_page.scss */
+.tiles .tile-2 {
+  background-color: #8a9aa2;
+}
+/* line 73, ../sass/partials/_page.scss */
+.tiles .tile-3 {
+  background-color: #94a57f;
+}
+/* line 76, ../sass/partials/_page.scss */
+.tiles .tile-4 {
+  background-color: #49312a;
+}
+/* line 79, ../sass/partials/_page.scss */
+.tiles .tile-5 {
+  background-color: #fefbee;
+}
+/* line 82, ../sass/partials/_page.scss */
+.tiles .abomination {
+  background-color: #010000;
 }
 
 @media only screen and (min-width: 480px) {

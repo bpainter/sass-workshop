@@ -13,7 +13,7 @@ body, select, input, textarea {
 //-----------------------------------
 // Add your own custom styles below
 //-----------------------------------
-$icon-type: large;
+$icon-type: small;
 
 .icon {
   @if $icon-type == large {

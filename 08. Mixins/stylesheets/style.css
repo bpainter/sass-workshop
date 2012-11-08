@@ -11,11 +11,12 @@ body, select, input, textarea {
   color: #222222;
 }
 
-/* line 32, ../sass/partials/_page.scss */
-.button {
-  background-color: #ccc;
+/* line 54, ../sass/partials/_page.scss */
+.button-primary {
+  background-color: #94a57f;
   border-radius: 4px;
-  box-shadow: #444 0 1px 0;
+  box-shadow: #879a70 0 1px 0;
+  color: #fff;
   cursor: pointer;
   display: inline-block;
   font-size: 14px;
@@ -24,13 +25,60 @@ body, select, input, textarea {
   position: relative;
   text-decoration: none;
 }
-/* line 43, ../sass/partials/_page.scss */
-.button:hover {
-  background-color: #666;
-  color: #efefef;
+/* line 45, ../sass/partials/_page.scss */
+.button-primary:hover {
+  background-color: #a1b08e;
 }
-/* line 47, ../sass/partials/_page.scss */
-.button:active {
+/* line 48, ../sass/partials/_page.scss */
+.button-primary:active {
+  bottom: -1px;
+  box-shadow: none;
+}
+
+/* line 57, ../sass/partials/_page.scss */
+.button-secondary {
+  background-color: #8a9aa2;
+  border-radius: 4px;
+  box-shadow: #7c8e97 0 1px 0;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  margin: 0 5px 0 0;
+  padding: 5px 10px;
+  position: relative;
+  text-decoration: none;
+}
+/* line 45, ../sass/partials/_page.scss */
+.button-secondary:hover {
+  background-color: #98a6ad;
+}
+/* line 48, ../sass/partials/_page.scss */
+.button-secondary:active {
+  bottom: -1px;
+  box-shadow: none;
+}
+
+/* line 60, ../sass/partials/_page.scss */
+.button-disabled {
+  background-color: #cccccc;
+  border-radius: 4px;
+  box-shadow: #bfbfbf 0 1px 0;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  margin: 0 5px 0 0;
+  padding: 5px 10px;
+  position: relative;
+  text-decoration: none;
+}
+/* line 45, ../sass/partials/_page.scss */
+.button-disabled:hover {
+  background-color: #d9d9d9;
+}
+/* line 48, ../sass/partials/_page.scss */
+.button-disabled:active {
   bottom: -1px;
   box-shadow: none;
 }

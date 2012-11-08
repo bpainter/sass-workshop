@@ -34,13 +34,22 @@ body, select, input, textarea {
 // } @else {
 // }
 // @include background(linear-gradient());
-@mixin button($color, $shadow, $radius) {
-
+@mixin happy-border-radius($radius) {
+  -ms-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;
+  -o-border-radius: $radius;
+  border-radius: $radius; 
 }
 
-button, .button {
-  border-radius: 4px;
-  box-shadow: #444 0 1px 0;
+@mixin button($color, $shadow, $radius) {
+  @if $shadow {
+    box-shadow: darken($color, 20%) 0 1px 0;
+  } 
+  @if $radius {
+    @include happy-border-radius($radius);  
+  }
+  background-color: $color-brand-primary;
   cursor: pointer;
   display: inline-block;
   font-size: 14px;
@@ -48,7 +57,7 @@ button, .button {
   padding: 5px 10px;
   position: relative;
   &:hover {
-    background-color: #666;
+    background-color: lighten($color, 5%);
     color: #efefef;
   }
   &:active {
@@ -56,17 +65,11 @@ button, .button {
     box-shadow: none;
   }
 }
-a {
-  text-decoration: none;
-}
+
 .button-primary {
-  background-color: $color-brand-primary;
-  border: 1px solid $color-brand-primary;
-  color: #fff;
+  @include button($color-brand-primary, yes, 4px);
 }
 .button-secondary {
-  background-color: $color-brand-secondary;
-  border: 1px solid $color-brand-secondary;
-  color: #fff;
+  @include button($color-brand-secondary, no, 20px)
 }
 

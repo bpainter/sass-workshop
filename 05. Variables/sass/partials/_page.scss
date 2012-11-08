@@ -30,11 +30,11 @@ $font-stack-monospace:  "Courier";
 body, select, input, textarea {
   color: $color-text;
   // Set your base font here, to apply evenly
-  // font-family: Georgia, serif;
+  font-family: $font-stack-serif;
 }
 
 //-----------------------------------
-// Add your own custom styles below
+// Add your own cuwstom styles below
 //-----------------------------------
 .tiles {
   margin-top: 20px;

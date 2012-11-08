@@ -13,7 +13,7 @@ body, select, input, textarea {
 //-----------------------------------
 // Add your own custom styles below
 //-----------------------------------
-$icon-name: printer;
+$icon-name: usa;
 
 .icon-#{$icon-name} {
   background-image: image-url("icons/icon-#{$icon-name}.png");

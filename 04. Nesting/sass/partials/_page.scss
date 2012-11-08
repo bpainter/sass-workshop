@@ -20,21 +20,24 @@ nav {
   ul {
     margin: 0;
     padding: 0;
-    li {
-      display: inline-block;
-      margin: 0 3px;
-      a{
-        background-color: #ccc;
-        color: #333;
-        display: block;
-        padding: 5px 15px;
-        text-decoration: none;
-      }
-      a:hover {
-        background-color: #333;
-        color: #efefef;
-      }
+  }
+  li {
+    display: inline-block;
+    margin: 0 3px;
+  }
+  a{
+    background-color: #ccc;
+    color: #333;
+    display: block;
+    padding: 5px 15px;
+    text-decoration: none;
+    &:hover{
+      background-color: #333;
+      color: #efefef;
     }
+  }
+  .ie6 & {
+    margin: 10px;
   }
 }
 

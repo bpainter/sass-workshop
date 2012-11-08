@@ -26,13 +26,41 @@ body, select, input, textarea {
   // font-family: Georgia, serif;
 }
 
+@import "compass/css3";
+
+$red:   #ff8566;
+$blue:  #8a9aa2;
+$green: #94a57f;
+$black: #49312a;
+$grey:  #a9a095;
+$tan:   #fefbee;
+
+$color-brand-primary:   $green;
+$color-brand-secondary: $blue;
+$color-brand-accent:    $red;
+
+$color-background:      $tan;
+$color-text:            $black;
+$color-link:            $color-brand-secondary;
+$color-link-hover:      $color-brand-accent;
+
+//-----------------------------------------------
+// The following html5-boilerplate styles should
+// probably be customized for each site
+//-----------------------------------------------
+body, select, input, textarea {
+  color: $font-color;
+  // Set your base font here, to apply evenly
+  // font-family: Georgia, serif;
+}
+
 //-----------------------------------
 // Add your own custom styles below
 //-----------------------------------
-.button {
-  background-color: #ccc;
+
+%button {
   border-radius: 4px;
-  box-shadow: #444 0 1px 0;
+  color: #fff;
   cursor: pointer;
   display: inline-block;
   font-size: 14px;
@@ -40,15 +68,38 @@ body, select, input, textarea {
   padding: 5px 10px;
   position: relative;
   text-decoration: none;
-  &:hover {
-    background-color: #666;
-    color: #efefef;
-  }
   &:active {
     bottom: -1px;
     box-shadow: none;
   }
 }
+
+// background-color: $color;  
+// box-shadow: darken($color, 5%) 0 1px 0;
+
+
+.button-primary {
+  $color: #000;
+  @extend %button;
+  background-color: $color-brand-primary;
+  &:hover {
+    box-shadow: darken($color, 5%) 0 1px 0;
+  };
+}
+.button-secondary {
+  $color: red;
+  @extend %button; 
+  background-color: $color-brand-secondary;
+}
+.button-disabled {
+  $color: blue;
+  @extend %button;
+  background-color: #ccc;
+}
+
+
+
+
 
 
 
