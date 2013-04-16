@@ -49,9 +49,23 @@ aside {
 // @extend inside a media query - yes/no
 // @mixins inside a media query - yes
 
-$small: 480px;
-$medium: 768px;
-$large: 1024px;
+$small-breakpoint: 480px;
+$medium-breakpoint: 768px;
+$large-breakpoint: 1024px;
+
+aside {
+  width: 100%;
+  @media screen and (min-width: $small-breakpoint) {
+    width: 100px;
+    float: right;
+  }
+  @media screen and (min-width: $medium-breakpoint) {
+    width: 200px;
+  }
+  @media screen and (min-width: $large-breakpoint) {
+    width: 400px;
+  }
+}
 
 %message {
   padding: 10px;
@@ -66,7 +80,7 @@ $large: 1024px;
   color: yellow;
 }
 
-@media only screen and (max-width: $small) {
+@media only screen and (max-width: $small-breakpoint) {
   article{
     background-color: red;
     width: column-width(12);
@@ -80,7 +94,7 @@ $large: 1024px;
   }
 }
 
-@media only screen and (min-width: $medium) {
+@media only screen and (min-width: $medium-breakpoint) {
   article {
     background-color: blue;
   }
@@ -88,20 +102,17 @@ $large: 1024px;
 
 
 
-
-
-
 // Media Query Mixin using @content
 
 @mixin respond-to($media) {
   @if $media == handhelds {
-    @media only screen and (max-width: $small) { @content; }
+    @media only screen and (max-width: $small-breakpoint) { @content; }
   }
   @else if $media == medium-screens {
-    @media only screen and (min-width: $small + 1) and (max-width: $large - 1) { @content; }
+    @media only screen and (min-width: $small-breakpoint + 1) and (max-width: $large-breakpoint - 1) { @content; }
   }
   @else if $media == wide-screens {
-    @media only screen and (min-width: $large) { @content; }
+    @media only screen and (min-width: $large-breakpoint) { @content; }
   }
 }
 

@@ -65,6 +65,36 @@ body, select, input, textarea {
   box-shadow: none;
 }
 
+/* line 88, ../sass/partials/_page.scss */
+.button {
+  background: linear-gradient(#008000 50%, #001a00 50%);
+}
+
+/* line 95, ../sass/partials/_page.scss */
+.gray-20 40 60 80 100 {
+  color: #fff;
+}
+
+/* line 95, ../sass/partials/_page.scss */
+.gray-20 40 60 80 100 {
+  color: #fff;
+}
+
+/* line 95, ../sass/partials/_page.scss */
+.gray-20 40 60 80 100 {
+  color: #fff;
+}
+
+/* line 95, ../sass/partials/_page.scss */
+.gray-20 40 60 80 100 {
+  color: #fff;
+}
+
+/* line 95, ../sass/partials/_page.scss */
+.gray-20 40 60 80 100 {
+  color: #fff;
+}
+
 @media only screen and (min-width: 480px) {
   /* Style adjustments for viewports 480px and over go here */
 }

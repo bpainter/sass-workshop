@@ -37,46 +37,70 @@ aside {
 }
 
 /* line 56, ../sass/partials/_page.scss */
+aside {
+  width: 100%;
+}
+@media screen and (min-width: 480px) {
+  /* line 56, ../sass/partials/_page.scss */
+  aside {
+    width: 100px;
+    float: right;
+  }
+}
+@media screen and (min-width: 768px) {
+  /* line 56, ../sass/partials/_page.scss */
+  aside {
+    width: 200px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  /* line 56, ../sass/partials/_page.scss */
+  aside {
+    width: 400px;
+  }
+}
+
+/* line 70, ../sass/partials/_page.scss */
 .error, .warning {
   padding: 10px;
   margin: 10px;
 }
 
-/* line 60, ../sass/partials/_page.scss */
+/* line 74, ../sass/partials/_page.scss */
 .error {
   color: red;
 }
 
-/* line 64, ../sass/partials/_page.scss */
+/* line 78, ../sass/partials/_page.scss */
 .warning {
   color: yellow;
 }
 
 @media only screen and (max-width: 480px) {
-  /* line 70, ../sass/partials/_page.scss */
+  /* line 84, ../sass/partials/_page.scss */
   article {
     background-color: red;
     width: 100%;
   }
 
-  /* line 74, ../sass/partials/_page.scss */
+  /* line 88, ../sass/partials/_page.scss */
   aside {
     width: 100%;
   }
 
-  /* line 77, ../sass/partials/_page.scss */
+  /* line 91, ../sass/partials/_page.scss */
   .success {
     color: green;
   }
 }
 @media only screen and (min-width: 768px) {
-  /* line 84, ../sass/partials/_page.scss */
+  /* line 98, ../sass/partials/_page.scss */
   article {
     background-color: blue;
   }
 }
 @media only screen and (min-width: 1024px) {
-  /* line 108, ../sass/partials/_page.scss */
+  /* line 119, ../sass/partials/_page.scss */
   article {
     width: 500px;
   }

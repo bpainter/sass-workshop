@@ -24,3 +24,17 @@ $icon-type: small;
     width: 50px;
   }
 }
+
+@for $i from 1px to 5px {
+  .border-#{$i} {
+    border: $i solid #000;
+  }
+}
+
+$emotions: happy sad excited mustached;
+
+@each $emotion in $emotions {
+  .feeling-#{$emotion} {
+    background-image: url("images/feeling-#{$emotion}");
+  }
+}
