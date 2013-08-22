@@ -1,7 +1,5 @@
 # Modular & Maintainable Sass Workshop
 
-Given at MinneWeb Conference on April 16th, 2013. 
-
 So you can start tinkering immediately you should create an account at [CodePen.io](http://codepen.io/collection/ocevd). All examples will be available during the workshop so you can follow along and experiment.
 
 A secondary set of static files will be provided after the workshop. You can download them from [Github.com](http://github.com/bpainter/sass-workshop).
