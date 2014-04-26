@@ -69,8 +69,8 @@ The workshop will be divided up into the following sections:
 
 #### Exercise 9 - Mixins vs. Extend
 
-- http://codepen.io/bpainter/pen/qKEmL
-- http://codepen.io/bpainter/pen/fEirL
+- [Part 1](http://codepen.io/bpainter/pen/qKEmL)
+- [Part 2](http://codepen.io/bpainter/pen/fEirL)
 
 
 ### <div id="advanced">Advanced</div>
