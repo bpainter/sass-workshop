@@ -33,7 +33,7 @@ The workshop will be divided up into three sections:
 #### Exercise 3 - Nesting
 
 - [Native CSS](http://codepen.io/bpainter/pen/IkByq)
-- [Overview](http://codepen.io/bpainter/pen/fztwl)
+- [Overview](http://codepen.io/bpainter/pen/aophg)
 - [Inception Rule of 3](http://codepen.io/bpainter/pen/fztwl)
 
 #### Exercise 4 - Parent Selectors:
