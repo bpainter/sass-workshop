@@ -13,13 +13,19 @@ We won't spend any time during the workshop doing installation. It just never wo
 
 ## Workshop Sections
 
-The workshop will be divided up into three sections:
+The workshop will be divided up into the following sections:
 
-1. [Basic](#basic)
-2. [Intermediate](#intermediate)
-3. [Advanced](#advanced)
+1. [Frameworks](#frameworks)
+2. [Basic](#basic)
+3. [Intermediate](#intermediate)
+4. [Advanced](#advanced)
 
-### <div id="#basic">Basic</div>
+### <div id="frameworks">Frameworks</div>
+
+1. [Bourbon](http://bourbon.io/) | [Neat](http://neat.bourbon.io/)
+2. [Compass](http://compass-style.org/) | [Susy](http://susy.oddbird.net/)
+
+### <div id="basic">Basic</div>
 
 #### Exercise 1 - Syntax
 
@@ -41,39 +47,86 @@ The workshop will be divided up into three sections:
 - [Referencing a Parent](http://codepen.io/bpainter/pen/jHfkz)
 - [Tricks with Modernizr](http://codepen.io/bpainter/pen/jHfkz)
 - [Tricks with IE](http://codepen.io/bpainter/pen/jHfkz)
+- http://codepen.io/bpainter/pen/eIJyh
 
 ### <div id="intermediate">Intermediate</div>
 
-1. Operations (Math…run!): [Example](http://codepen.io/bpainter/pen/EmeiL)
-2. Mixins: [Simple](http://codepen.io/bpainter/pen/yAJiE) | [Complex CSS Version](http://codepen.io/bpainter/pen/mguFy) | [Complex Sass Version](http://codepen.io/bpainter/pen/fcHIJ)
-3. @extend Directive: [Example](http://codepen.io/bpainter/pen/rnHgt)
-4. Placeholder Directive: [Example](http://codepen.io/bpainter/pen/BDhuf)
+#### Exercise 5 - Operations
+
+- [Basic Operations](http://codepen.io/bpainter/pen/EmeiL)
+
+#### Exercise 6 - Mixins
+
+- [Simple Mixin](http://codepen.io/bpainter/pen/yAJiE)
+- [Complex CSS Version](http://codepen.io/bpainter/pen/mguFy)
+- [Complex Sass Version](http://codepen.io/bpainter/pen/fcHIJ)
+
+#### Exercise 7 - @extend 
+
+- [Basic Extend Directive](http://codepen.io/bpainter/pen/rnHgt)
+
+#### Exercise 8 - Placeholders
+
+- [Basic Placeholder](http://codepen.io/bpainter/pen/BDhuf)
+
+#### Exercise 9 - Mixins vs. Extend
+
+- http://codepen.io/bpainter/pen/qKEmL
+- http://codepen.io/bpainter/pen/fEirL
+
 
 ### <div id="advanced">Advanced</div>
 
-1. Functions: [Example](http://codepen.io/bpainter/pen/BtIiu)
-2. Color Functions: [Example](http://codepen.io/bpainter/pen/igGao)
-3. Control Directives: [if, else if, else](http://codepen.io/bpainter/pen/nJuHk)
-4. Media Queries: [Example](http://codepen.io/bpainter/pen/zjJvG)
-5. @content Directive: [Example](http://codepen.io/bpainter/pen/rJeLA)
+#### Exercise 10 - Functions
 
-### Frameworks
+- [Math Functions](http://codepen.io/bpainter/pen/BtIiu)
+- [Color Functions](http://codepen.io/bpainter/pen/igGao)
 
-1. [Bourbon](http://bourbon.io/) | [Neat](http://neat.bourbon.io/)
-2. [Compass](http://compass-style.org/) | [Susy](http://susy.oddbird.net/)
+#### Exercise 11 - Control Directives
 
-### [Modular Systems](#coming-soon)
+- [if, else if, else](http://codepen.io/bpainter/pen/nJuHk)
+- [each loop](http://codepen.io/bpainter/pen/LaquJ)
+- [while loop](http://codepen.io/bpainter/pen/mIvjx)
 
-1. File Structure
-2. @import directive
-3. Modules
+#### Exercise 12 - Media Queries
 
-### Boilerplates
+- [Basic Media Query](http://codepen.io/bpainter/pen/zjJvG)
+- [@content](http://codepen.io/bpainter/pen/rJeLA)
+
+#### Exercise 13 - Maps
+
+- [Basic Map](http://codepen.io/bpainter/pen/Fdpxs)
+
+
+### <div id="modular-systems">Modular Systems & Pattern Libraries</div>
+
+#### Boilerplates
 
 1. [Foundation](http://foundation.zurb.com/)
 2. [Rock Hammer](http://github.com/malarkey/Rock-Hammer)
 3. [Bootstrap](http://github.com/jlong/sass-twitter-bootstrap)
 
-### On the Horizon
+#### Custom Systems
+
+##### Creating a Modular System
+
+In order to create a modular system, modules must be:
+
+1. Nestable
+2. Combinable
+3. Clearfixed
+4. Flexible
+5. Sepatared by Structure and Aesthetics
+
+##### Pattern Libraries and Rapid Prototyping 
+
+Provide the following:
+
+1. Consistent user experience
+2. Consistent aesthetics
+3. Reusable architecture
+4. Maintainable and tested structure
+
+### LibSass
 
 [LibSass](https://github.com/hcatlin/libsass), C implementation of Sass. Insanely fast, works as a system level library on OSX, Linux and Windows, wrappers for multiple languages.
