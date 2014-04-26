@@ -45,9 +45,7 @@ The workshop will be divided up into the following sections:
 #### Exercise 4 - Parent Selectors:
 
 - [Referencing a Parent](http://codepen.io/bpainter/pen/jHfkz)
-- [Tricks with Modernizr](http://codepen.io/bpainter/pen/jHfkz)
-- [Tricks with IE](http://codepen.io/bpainter/pen/jHfkz)
-- http://codepen.io/bpainter/pen/eIJyh
+- [Tricks with Modernizr](http://codepen.io/bpainter/pen/eIJyh) | [Modernizr Docs](http://modernizr.com/docs/#features-css)
 
 ### <div id="intermediate">Intermediate</div>
 
