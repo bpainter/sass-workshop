@@ -21,10 +21,26 @@ The workshop will be divided up into three sections:
 
 ### <div id="#basic">Basic</div>
 
-1. Syntax: [Sass Syntax](http://codepen.io/bpainter/pen/wrdLo) | [SCSS/Sassy Syntax](http://codepen.io/bpainter/pen/cpdeb)
-2. Variables: [Example](http://codepen.io/bpainter/pen/ntxLb)
-3. Nesting: [CSS Example](http://codepen.io/bpainter/pen/IkByq) | [Sass Example](http://codepen.io/bpainter/pen/fztwl)
-4. Parent Selectors: [Example](http://codepen.io/bpainter/pen/jHfkz)
+#### Exercise 1 - Syntax
+
+- [Sass Syntax](http://codepen.io/bpainter/pen/wrdLo)
+- [SCSS/Sassy Syntax](http://codepen.io/bpainter/pen/cpdeb)
+
+#### Exercise 2 - Variables
+
+- [Basic Usage](http://codepen.io/bpainter/pen/ntxLb)
+
+#### Exercise 3 - Nesting
+
+- [Native CSS](http://codepen.io/bpainter/pen/IkByq)
+- [Overview](http://codepen.io/bpainter/pen/fztwl)
+- [Inception Rule of 3](http://codepen.io/bpainter/pen/fztwl)
+
+#### Exercise 4 - Parent Selectors:
+
+- [Referencing a Parent](http://codepen.io/bpainter/pen/jHfkz)
+- [Tricks with Modernizr](http://codepen.io/bpainter/pen/jHfkz)
+- [Tricks with IE](http://codepen.io/bpainter/pen/jHfkz)
 
 ### <div id="intermediate">Intermediate</div>
 
